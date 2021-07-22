@@ -4,7 +4,7 @@
 }
 
 body {
-  font-family: 'Merriweather', serif;
+  font-family: "Merriweather", serif;
   background-color: #000000;
 }
 
@@ -23,27 +23,27 @@ body {
   width: 100%;
 }
 
-.button__primary  {
+.button__primary {
   background-image: linear-gradient(
     to right,
     #ff512f 0%,
-     #dd2476 51%,
-     #ff512f 100%
-    );
-    color: #fff;
-    border: none;
-    padding: 12px;
-    border-radius: 6px;
-    font-weight: 600;
+    #dd2476 51%,
+    #ff512f 100%
+  );
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  font-weight: 600;
 }
 
 #pizza__card {
-    margin-top: 50px;
-    margin-bottom: 50px;
-  }
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
 
 .button__primary:hover {
-  border: 2px solid #FF6767;
+  border: 2px solid #ff6767;
   cursor: pointer;
 }
 
@@ -97,9 +97,71 @@ body {
   color: #fdb9bf;
 }
 
+.viewmore {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.view_more {
+  background-image: linear-gradient(
+    to right,
+    #ffb2a2 0%,
+    #ffa3cd 51%,
+    #ffb2a2 100%
+  );
+  color: rgb(94, 9, 9);
+  border: none;
+  padding: 12px;
+  padding-left: 50px;
+  padding-right: 50px;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+.view_more:hover {
+  border: 2px solid #ff6767;
+  cursor: pointer;
+}
+
+.res_pics {
+  width: 100%;
+}
+
+.restaurantrow1 {
+  display: flex;
+  align-items: baseline;
+}
+.restaurantrow2 {
+  margin-top: 10px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row-reverse;
+}
+
+.rest2,
+.rest4 {
+  border-radius: 4px;
+  margin: 0 5px;
+  width: 200px;
+  height: 100px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+.rest1,
+.rest3 {
+  border-radius: 4px;
+  margin: 0 5px;
+  width: 150px;
+  height: 80px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
 @media (min-width: 768px) {
   .explore__menu__lists {
-  margin-top: 45px;
+    margin-top: 45px;
     display: flex;
     gap: 15px;
     padding: 0 30px;
@@ -118,9 +180,9 @@ body {
     background-image: linear-gradient(
       to right,
       #ff512f 0%,
-       #dd2476 51%,
-       #ff512f 100%
-      );
+      #dd2476 51%,
+      #ff512f 100%
+    );
     z-index: -3;
     transform: skewY(-5deg);
   }
@@ -141,40 +203,78 @@ body {
     flex-direction: row-reverse;
     align-items: center;
   }
+
+  .restaurants {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .restaurantrow1 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .restaurantrow2 {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+  }
+
+  .rest1, .rest2, .rest3, .rest4 {
+    margin: 10px;
+  }
+
+  
 }
 
 @media (min-width: 1024px) {
   .container {
-     max-width: 70%;
+    max-width: 70%;
   }
 
   .explore__menu__lists {
     gap: 25px;
   }
 
-   .navbar__brand {
-     width: 150px;
-   }
+  .navbar__brand {
+    width: 150px;
+  }
 
-   .button__primary  {
-     padding: 20px;
-     font-size: 20px;
-   }
+  .button__primary {
+    padding: 20px;
+    font-size: 20px;
+  }
 
-   .hero__description {
-     width: 100%;
-   }
+  .hero__description {
+    width: 100%;
+  }
 
-   .hero__text {
-     font-size: 50px;
-   }
+  .hero__text {
+    font-size: 50px;
+  }
 
-   .explore__menu__text {
-     font-size: 48px;
-   }
+  .explore__menu__text {
+    font-size: 48px;
+  }
 
-   #pizza__card {
+  #pizza__card {
     margin-top: 50px;
     margin-bottom: 5px;
+  }
+
+  .rest2,
+  .rest4 {
+    width: 300px;
+    height: 260px;
+  }
+  .rest1,
+  .rest3 {
+    width: 250px;
+    height: 180px;
   }
 }
