@@ -5,14 +5,14 @@
 
 body {
   font-family: 'Merriweather', serif;
-  background-color: #ebf2ff;
+  background-color: #000000;
 }
 
 .navbar {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background-color: #fff;
+  background-color: rgb(75, 2, 2);
 }
 
 .navbar__brand {
@@ -37,7 +37,12 @@ body {
     font-weight: 600;
 }
 
-.button__primary :hover {
+#pizza__card {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+.button__primary:hover {
   border: 2px solid #FF6767;
   cursor: pointer;
 }
@@ -62,7 +67,7 @@ body {
   font-weight: 800;
   font-size: 30px;
   margin: 20px 0;
-  color: #1d3557;
+  color: #fdb9bf;
 }
 
 .food__card__description {
@@ -70,7 +75,8 @@ body {
 }
 
 .food__card {
-  background-color: #F9F9F9;
+  background-color: #f1cccc;
+  border-radius: 8px;
 }
 
 .food__card__image__container {
@@ -88,7 +94,7 @@ body {
   text-align: center;
   font-size: 30px;
   font-weight: 800;
-  color: #1d3557;
+  color: #fdb9bf;
 }
 
 @media (min-width: 768px) {
@@ -120,8 +126,8 @@ body {
   }
 
   #pizza__card {
-    margin-top: -20px;
-    margin-bottom: 30px;
+    margin-top: 50px;
+    margin-bottom: 5px;
   }
 
   .navbar {
@@ -166,4 +172,9 @@ body {
    .explore__menu__text {
      font-size: 48px;
    }
+
+   #pizza__card {
+    margin-top: 50px;
+    margin-bottom: 5px;
+  }
 }
