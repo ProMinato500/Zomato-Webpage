@@ -24,6 +24,10 @@ body {
   width: 100%;
 }
 
+.navbar__logo:hover {
+  cursor: pointer;
+}
+
 .button__primary {
   background-image: linear-gradient(
     to right,
@@ -104,6 +108,7 @@ body {
   font-weight: 800;
   color: #fdb9bf;
 }
+
 
 .viewmore {
   width: 100%;
